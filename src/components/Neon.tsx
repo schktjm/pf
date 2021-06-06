@@ -1,11 +1,12 @@
 import React from 'react';
+import { COLOR } from '../utils'
 
 type Props = {}
 
 const Neon: React.FC<Props> = () => (
     <svg width={628} height={632} viewBox="0 0 628 632" fill="none">
         <path d="M80.0961 220C67.7905 249.73 61 282.322 61 316.5C61 455.952 174.048 569 313.5 569C452.952 569 566 455.952 566 316.5C566 282.322 559.209 249.73 546.904 220" stroke="#FCE4EC" strokeWidth={8} strokeLinecap="round" filter="url(#filter0_d)" />
-        <path d="M63.2597 211C49.5691 243.434 42 279.083 42 316.5C42 466.445 163.555 588 313.5 588C463.445 588 585 466.445 585 316.5C585 279.083 577.431 243.434 563.74 211" stroke="#fff" strokeWidth={8} strokeLinecap="round" strokeDasharray="1 20" filter="url(#filter1_d)" />
+        <path d="M63.2597 211C49.5691 243.434 42 279.083 42 316.5C42 466.445 163.555 588 313.5 588C463.445 588 585 466.445 585 316.5C585 279.083 577.431 243.434 563.74 211" stroke={COLOR.yellow.default} strokeWidth={8} strokeLinecap="round" strokeDasharray="1 20" filter="url(#filter1_d)" />
         <path d="M578.987 200C595.063 236.048 604 275.98 604 318C604 478.163 474.163 608 314 608C153.837 608 24 478.163 24 318C24 275.98 32.9368 236.048 49.0134 200" stroke="#FCE4EC" strokeWidth={8} strokeLinecap="round" filter="url(#filter2_d)" />
         <path d="M236.225 234.385C231.166 204.036 231.916 151.8 243.265 145.316C249.941 141.501 276.144 173.137 286.26 193.369L286.501 193.875M391.772 233.955C396.83 203.606 395.652 151.813 384.303 145.328C377.627 141.513 351.424 173.149 341.308 193.382L341.13 193.75M341.13 193.75C332.94 191.851 323.908 190.841 314.081 190.841C304.042 190.841 294.831 191.895 286.501 193.875M341.13 193.75C369.954 200.433 388.341 218.121 394.164 241.5M286.501 193.875C257.778 200.699 239.526 218.518 233.876 242M233.148 273V271.773C232.966 270.676 232.813 271.773 232.666 268.5M395.014 273V271.773C395.168 270.845 395.307 269.92 395.431 269M396.067 254.5C396.118 255.493 396.158 257.5 396.158 257.5M232.5 255V257.5" stroke="#FCE4EC" strokeWidth="10.1166" filter="url(#filter3_d)" />
         <g filter="url(#filter4_d)">
@@ -48,8 +49,8 @@ const Neon: React.FC<Props> = () => (
                 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
             </filter>
             <filter id="filter1_d" x={22} y="190.999" width={583} height="417.001" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                <feFlood floodOpacity={0} floodColor={COLOR.yellow.dark} result="BackgroundImageFix" />
+                {/* <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" /> */}
                 <feOffset />
                 <feGaussianBlur stdDeviation={8} />
                 <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.792157 0 0 0 0 0.156863 0 0 0 1 0" />

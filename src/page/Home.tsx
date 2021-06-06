@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import Neon from '../components/Neon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { COLOR } from '../utils/';
 
 type Props = {};
 
@@ -33,8 +34,8 @@ const NeonWrapper = styled.div`
         z-index: -1;
         position: absolute;
         content: '';
-        background: radial-gradient(red, #000);
-        opacity: .5;
+        background: radial-gradient(circle closest-side at center, transparent 30%, ${COLOR.pink.dark} 60%, transparent 80%);
+        opacity: .25;
         top: 0;
         left: 0;
         right: 0;
