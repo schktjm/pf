@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import media from "styled-media-query";
 import Neon from '../components/Neon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { COLOR } from '../utils/';
@@ -16,12 +17,9 @@ const Wrapper = styled.div`
 `;
 const NeonWrapper = styled.div`
     border: red 1px solid;
-    height: 100vh;
-    width: 90%;
     z-index: 0;
     position: relative;
     box-sizing: border-box;
-    padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,16 +28,25 @@ const NeonWrapper = styled.div`
     background-repeat: no-repeat;
     background-position: center;
 
+    ${media.lessThan("medium")`
+        width: 80%;
+    `}
+
+    ${media.greaterThan("medium")`
+        width: 700px;
+        height: 100vh;
+    `}
+
     &::before {
         z-index: -1;
         position: absolute;
         content: '';
-        background: radial-gradient(circle closest-side at center, transparent 30%, ${COLOR.pink.dark} 60%, transparent 80%);
         opacity: .25;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
+        background: radial-gradient(circle closest-side at center, transparent 40%, ${COLOR.pink.dark} 85%, transparent 120%);
     }
 `;
 const NavWrapper = styled.div`

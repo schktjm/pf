@@ -4,7 +4,7 @@ import { COLOR } from '../utils'
 type Props = {}
 
 const Neon: React.FC<Props> = () => (
-    <svg width={628} height={632} viewBox="0 0 628 632" fill="none">
+    <svg viewBox="0 0 628 632" fill="none">
         <path d="M80.0961 220C67.7905 249.73 61 282.322 61 316.5C61 455.952 174.048 569 313.5 569C452.952 569 566 455.952 566 316.5C566 282.322 559.209 249.73 546.904 220" stroke="#FCE4EC" strokeWidth={8} strokeLinecap="round" filter="url(#filter0_d)" />
         <path d="M63.2597 211C49.5691 243.434 42 279.083 42 316.5C42 466.445 163.555 588 313.5 588C463.445 588 585 466.445 585 316.5C585 279.083 577.431 243.434 563.74 211" stroke={COLOR.yellow.default} strokeWidth={8} strokeLinecap="round" strokeDasharray="1 20" filter="url(#filter1_d)" />
         <path d="M578.987 200C595.063 236.048 604 275.98 604 318C604 478.163 474.163 608 314 608C153.837 608 24 478.163 24 318C24 275.98 32.9368 236.048 49.0134 200" stroke="#FCE4EC" strokeWidth={8} strokeLinecap="round" filter="url(#filter2_d)" />
