@@ -8,7 +8,9 @@ import { COLOR } from '../utils/';
 type Props = {};
 
 const Wrapper = styled.div`
+    box-sizing: border-box;
     background: black;
+    min-height: 80vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -28,12 +30,12 @@ const NeonWrapper = styled.div`
     background-position: center;
 
     ${media.lessThan("medium")`
-        width: 80%;
-        padding: 10vw;
+        width: 100%;
+        padding: 15vw;
     `}
 
     ${media.greaterThan("medium")`
-        width: 700px;
+        width: 90vh;
         height: 100vh;
         padding: 100px;
     `}
@@ -42,36 +44,83 @@ const NeonWrapper = styled.div`
         z-index: -1;
         position: absolute;
         content: '';
-        opacity: .25;
+        opacity: .29;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background: radial-gradient(circle closest-side at center, transparent 30%, ${COLOR.pink.dark} 60%, transparent 90%);
+        ${media.lessThan("medium")`
+            background: radial-gradient(circle closest-side at center, transparent 25%, ${COLOR.pink.dark} 65%, transparent 85%);
+        `}
+
+        ${media.greaterThan("medium")`
+            background: radial-gradient(circle closest-side at center, transparent 25%, ${COLOR.pink.dark} 65%, transparent 95%);
+        `}
+        }
+`;
+const NavWrapper = styled.section`
+    box-sizing: border-box;
+    color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    ${media.lessThan("medium")`
+        position: absolute; 
+        bottom: 5vh;
+        font-size: 1.5rem;
+    `}
+
+    ${media.greaterThan("medium")`
+        font-size: 2rem;
+        height: 40vh;
+    `}
+`;
+const Text = styled.p`
+    font-weight: normal;
+    font-size: 0.75em;
+`;
+const IconButton = styled.a`
+    margin-right: 30px;
+    color: #E0E0E0;
+
+    &:last-child{
+        margin-right: 0px;
+    }
+
+    &:hover{
+        color: #616161;
     }
 `;
-const NavWrapper = styled.div`
-    height: 200px;
-    display: flex;
-    align-items: center;
-`;
-const IconsNav = styled.nav`
-    color: white;
-    font-size: 1.5rem;
-    border: red 1px solid;
-`;
 
-const Home: React.FC<Props> = () => (
-    <Wrapper>
-        <NeonWrapper>
-            <Neon />
-        </NeonWrapper>
-        <NavWrapper>
-            <IconsNav>
-                <FontAwesomeIcon icon={['fab', 'twitter']} />
-            </IconsNav>
-        </NavWrapper>
-    </Wrapper>
-);
+const Home: React.FC<Props> = () => {
+    const copyMail = () => {
+        const mail = 'schktjm@gmail.com';
+        navigator.clipboard.writeText(mail)
+            .catch(e => console.error(e))
+    }
+    return (
+        <Wrapper>
+            <NeonWrapper>
+                <Neon />
+            </NeonWrapper>
+            <NavWrapper>
+                <Text>Contact.</Text>
+                <nav>
+                    <IconButton href="https://twitter.com/schktjm" target="_blank" rel="noopener noreferrer" >
+                        <FontAwesomeIcon icon={['fab', 'twitter']} />
+                    </IconButton>
+                    <IconButton href="https://tjmschk.hatenablog.com/" target="_blank" rel="noopener noreferrer" >
+                        <FontAwesomeIcon icon={['fas', 'blog']} />
+                    </IconButton>
+                    <IconButton href="#" target="_self" onClick={copyMail}>
+                        <FontAwesomeIcon icon={['fas', 'envelope']} />
+                    </IconButton>
+                </nav>
+            </NavWrapper>
+        </Wrapper>
+    )
+};
 
 export default Home;
