@@ -16,7 +16,6 @@ const Wrapper = styled.div`
     justify-content: center;
 `;
 const NeonWrapper = styled.div`
-    border: red 1px solid;
     z-index: 0;
     position: relative;
     box-sizing: border-box;
@@ -24,17 +23,19 @@ const NeonWrapper = styled.div`
     justify-content: center;
     align-items: center;
     background-image: url('./images/bg.jpeg');
-    background-size: contain;
+    background-size: auto 80%;
     background-repeat: no-repeat;
     background-position: center;
 
     ${media.lessThan("medium")`
         width: 80%;
+        padding: 10vw;
     `}
 
     ${media.greaterThan("medium")`
         width: 700px;
         height: 100vh;
+        padding: 100px;
     `}
 
     &::before {
@@ -46,7 +47,7 @@ const NeonWrapper = styled.div`
         left: 0;
         right: 0;
         bottom: 0;
-        background: radial-gradient(circle closest-side at center, transparent 40%, ${COLOR.pink.dark} 85%, transparent 120%);
+        background: radial-gradient(circle closest-side at center, transparent 30%, ${COLOR.pink.dark} 60%, transparent 90%);
     }
 `;
 const NavWrapper = styled.div`
