@@ -56,7 +56,7 @@ const NeonWrapper = styled.div`
         ${media.greaterThan("medium")`
             background: radial-gradient(circle closest-side at center, transparent 25%, ${COLOR.pink.dark} 65%, transparent 95%);
         `}
-        }
+    }
 `;
 const NavWrapper = styled.section`
     box-sizing: border-box;
@@ -89,7 +89,11 @@ const IconButton = styled.a`
         margin-right: 0px;
     }
 
-    &:hover{
+    &:visited {
+        color: #E0E0E0;
+    }
+
+    &:hover {
         color: #616161;
     }
 `;
