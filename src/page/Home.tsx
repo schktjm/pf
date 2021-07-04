@@ -81,9 +81,14 @@ const Text = styled.p`
     font-weight: normal;
     font-size: 0.75em;
 `;
-const IconButton = styled.a`
+const IconButton = styled.button`
     margin-right: 30px;
     color: #E0E0E0;
+    border: none;
+    background: none;
+    padding: 0;
+    display: inline;
+    font-size: inherit;
 
     &:last-child{
         margin-right: 0px;
@@ -97,6 +102,7 @@ const IconButton = styled.a`
         color: #616161;
     }
 `;
+const IconLink = IconButton.withComponent('a')
 
 const Home: React.FC<Props> = () => {
     const copyMail = () => {
@@ -112,13 +118,13 @@ const Home: React.FC<Props> = () => {
             <NavWrapper>
                 <Text>Contact.</Text>
                 <nav>
-                    <IconButton href="https://twitter.com/schktjm" target="_blank" rel="noopener noreferrer" >
+                    <IconLink href="https://twitter.com/schktjm" target="_blank" rel="noopener noreferrer" >
                         <FontAwesomeIcon icon={['fab', 'twitter']} />
-                    </IconButton>
-                    <IconButton href="https://tjmschk.hatenablog.com/" target="_blank" rel="noopener noreferrer" >
+                    </IconLink>
+                    <IconLink href="https://tjmschk.hatenablog.com/" target="_blank" rel="noopener noreferrer" >
                         <FontAwesomeIcon icon={['fas', 'blog']} />
-                    </IconButton>
-                    <IconButton href="#" target="_self" onClick={copyMail}>
+                    </IconLink>
+                    <IconButton type="button" onClick={copyMail}>
                         <FontAwesomeIcon icon={['fas', 'envelope']} />
                     </IconButton>
                 </nav>
