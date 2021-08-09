@@ -1,5 +1,6 @@
 import React from 'react';
 import { COLOR } from '../utils'
+import SvgDefs from './SvgDefs'
 
 type Props = {}
 
@@ -8,7 +9,7 @@ const Neon: React.FC<Props> = () => (
         <path stroke="#FCE4EC" strokeWidth={8} strokeLinecap="round" filter="url(#inner-outline)" d="M80.0961 220C67.7905 249.73 61 282.322 61 316.5C61 455.952 174.048 569 313.5 569C452.952 569 566 455.952 566 316.5C566 282.322 559.209 249.73 546.904 220" />
         <path stroke={COLOR.yellow.default} strokeWidth={8} strokeLinecap="round" strokeDasharray="1 20" filter="url(#dashed-outline)" d="M63.2597 211C49.5691 243.434 42 279.083 42 316.5C42 466.445 163.555 588 313.5 588C463.445 588 585 466.445 585 316.5C585 279.083 577.431 243.434 563.74 211" />
         <path stroke="#FCE4EC" strokeWidth={8} strokeLinecap="round" filter="url(#outside-outline)" d="M578.987 200C595.063 236.048 604 275.98 604 318C604 478.163 474.163 608 314 608C153.837 608 24 478.163 24 318C24 275.98 32.9368 236.048 49.0134 200" />
-        <path stroke="#FCE4EC" strokeWidth={10.1166} filter="url(#cat-ear)" d="M236.225 234.385C231.166 204.036 231.916 151.8 243.265 145.316C249.941 141.501 276.144 173.137 286.26 193.369L286.501 193.875M391.772 233.955C396.83 203.606 395.652 151.813 384.303 145.328C377.627 141.513 351.424 173.149 341.308 193.382L341.13 193.75M341.13 193.75C332.94 191.851 323.908 190.841 314.081 190.841C304.042 190.841 294.831 191.895 286.501 193.875M341.13 193.75C369.954 200.433 388.341 218.121 394.164 241.5M286.501 193.875C257.778 200.699 239.526 218.518 233.876 242M233.148 273V271.773C232.966 270.676 232.813 271.773 232.666 268.5M395.014 273V271.773C395.168 270.845 395.307 269.92 395.431 269M396.067 254.5C396.118 255.493 396.158 257.5 396.158 257.5M232.5 255V257.5" />
+        <path stroke="#FCE4EC" strokeWidth={8} filter="url(#cat-ear)" d="M236.225 234.385C231.166 204.036 231.916 151.8 243.265 145.316C249.941 141.501 276.144 173.137 286.26 193.369L286.501 193.875M391.772 233.955C396.83 203.606 395.652 151.813 384.303 145.328C377.627 141.513 351.424 173.149 341.308 193.382L341.13 193.75M341.13 193.75C332.94 191.851 323.908 190.841 314.081 190.841C304.042 190.841 294.831 191.895 286.501 193.875M341.13 193.75C369.954 200.433 388.341 218.121 394.164 241.5M286.501 193.875C257.778 200.699 239.526 218.518 233.876 242M233.148 273V271.773C232.966 270.676 232.813 271.773 232.666 268.5M395.014 273V271.773C395.168 270.845 395.307 269.92 395.431 269M396.067 254.5C396.118 255.493 396.158 257.5 396.158 257.5M232.5 255V257.5" />
         <g filter="url(#corn-checkers)">
             <path stroke="#EFCFAC" strokeWidth={5} d="M264.146 330.969C263.713 329.843 264.276 328.578 265.403 328.146C266.53 327.713 267.794 328.276 268.227 329.403L315.488 452.523C315.921 453.65 315.358 454.914 314.231 455.347C313.104 455.779 311.84 455.216 311.407 454.09L264.146 330.969Z" />
             <path stroke="#EFCFAC" strokeWidth={5} d="M290.372 330.969C289.94 329.843 290.503 328.578 291.63 328.146C292.757 327.713 294.021 328.276 294.453 329.403L335.417 436.118C335.85 437.245 335.287 438.509 334.16 438.942C333.033 439.374 331.769 438.811 331.337 437.684L290.372 330.969Z" />
@@ -18,7 +19,7 @@ const Neon: React.FC<Props> = () => (
             <path stroke="#EFCFAC" strokeWidth={5} d="M356.421 376.411C357.504 375.877 358.814 376.323 359.347 377.405C359.881 378.488 359.436 379.798 358.353 380.332L289.111 414.45C288.028 414.983 286.718 414.538 286.184 413.455C285.651 412.373 286.096 411.062 287.179 410.529L356.421 376.411Z" />
             <path stroke="#EFCFAC" strokeWidth={5} d="M336.867 416.643C337.95 416.11 339.26 416.555 339.794 417.638C340.327 418.721 339.882 420.031 338.799 420.564L300.042 439.661C298.959 440.195 297.649 439.75 297.116 438.667C296.582 437.584 297.027 436.274 298.11 435.74L336.867 416.643Z" />
         </g>
-        <path stroke="#EFCFAC" strokeWidth={8.74224} filter="url(#corn)" d="M230.928 301.856C230.928 301.856 303.051 551.009 313.979 551.009C324.906 551.009 397.03 301.856 397.03 301.856M224.371 280C222.185 280 220 282.186 220 284.371V297.484C220 299.67 222.185 301.856 224.371 301.856H403.587C405.772 301.856 407.958 299.67 407.958 297.484V284.371C407.958 282.186 405.772 280 403.587 280H224.371Z" />
+        <path stroke="#EFCFAC" strokeWidth={8} filter="url(#corn)" d="M230.928 301.856C230.928 301.856 303.051 551.009 313.979 551.009C324.906 551.009 397.03 301.856 397.03 301.856M224.371 280C222.185 280 220 282.186 220 284.371V297.484C220 299.67 222.185 301.856 224.371 301.856H403.587C405.772 301.856 407.958 299.67 407.958 297.484V284.371C407.958 282.186 405.772 280 403.587 280H224.371Z" />
         <g filter="url(#whiskers)">
             <path fill="#FFFDE7" d="M254.255 251.833C254.68 249.5 253.133 247.264 250.8 246.839L210.487 239.499C208.154 239.074 205.919 240.621 205.495 242.954C205.07 245.288 206.617 247.523 208.95 247.948L249.263 255.289C251.596 255.713 253.831 254.166 254.255 251.833Z" />
             <path fill="#FFFDE7" d="M252.862 261.841C252.738 259.434 250.686 257.583 248.279 257.707L208.489 259.761C206.082 259.885 204.232 261.937 204.356 264.345C204.481 266.752 206.532 268.603 208.939 268.479L248.729 266.425C251.136 266.301 252.986 264.249 252.862 261.841Z" />
@@ -38,188 +39,7 @@ const Neon: React.FC<Props> = () => (
         <path fill="#FFDAE0" filter="url(#name-i2)" d="M472.437 119.302C471.848 118.821 471.523 118.27 471.462 117.651C471.425 117.001 471.648 116.382 472.129 115.794L496.108 86.4953C496.589 85.9072 497.139 85.5822 497.758 85.5204C498.403 85.4276 499.019 85.6219 499.607 86.1032C500.195 86.5846 500.508 87.1503 500.544 87.8004C500.606 88.4196 500.396 89.0233 499.915 89.6114L475.936 118.91C475.455 119.498 474.892 119.838 474.247 119.931C473.628 119.993 473.025 119.783 472.437 119.302Z" />
         <path fill="#FFDAE0" filter="url(#name-m)" d="M545.454 132.058C545.964 132.621 546.175 133.212 546.088 133.831C546.058 134.452 545.761 135.018 545.197 135.528L517.051 161.028C516.517 161.512 515.953 161.753 515.358 161.752C514.764 161.751 514.225 161.483 513.741 160.95C513.258 160.416 513.058 159.868 513.143 159.306C513.227 158.744 513.536 158.221 514.07 157.738L536.792 137.153L509.552 144.262C508.317 144.625 507.336 144.407 506.611 143.607C505.913 142.836 505.792 141.839 506.249 140.615L515.743 114.365L493.243 134.749C492.709 135.232 492.145 135.473 491.55 135.472C490.983 135.501 490.457 135.249 489.974 134.715C489.49 134.181 489.277 133.619 489.335 133.027C489.392 132.435 489.688 131.897 490.222 131.414L518.368 105.914C518.932 105.404 519.524 105.164 520.145 105.195C520.797 105.199 521.377 105.482 521.888 106.045C522.559 106.786 522.666 107.769 522.209 108.992L510.787 139.905L542.553 131.447C543.242 131.255 543.796 131.211 544.216 131.317C544.692 131.426 545.105 131.672 545.454 132.058Z" />
         <path fill="#FFDAE0" filter="url(#name-a3)" d="M545.166 204.535C544.97 204.834 544.716 205.073 544.404 205.254C543.885 205.555 543.332 205.598 542.745 205.384C542.179 205.204 541.735 204.837 541.414 204.283C540.912 203.418 540.976 202.572 541.606 201.744L547.876 193.183L536.528 173.616L525.952 174.755C524.921 174.891 524.154 174.526 523.653 173.661C523.332 173.108 523.224 172.523 523.329 171.907C523.469 171.271 523.798 170.803 524.317 170.502C524.594 170.341 524.911 170.25 525.268 170.228L566.887 165.926C567.492 165.853 568.036 165.953 568.519 166.228C569.002 166.503 569.384 166.882 569.665 167.367C569.966 167.886 570.098 168.433 570.062 169.009C570.061 169.565 569.896 170.077 569.566 170.545L545.166 204.535ZM540.96 173.126L550.503 189.579L564.349 170.519L540.96 173.126Z" />
-        <defs>
-            <filter id="inner-outline" x={37} y="195.999" width={553} height="397.001" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation={10} />
-                <feColorMatrix type="matrix" values="0 0 0 0 0.913725 0 0 0 0 0.117647 0 0 0 0 0.388235 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="dashed-outline" x={22} y="190.999" width={583} height="417.001" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} floodColor={COLOR.yellow.dark} result="BackgroundImageFix" />
-                {/* <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" /> */}
-                <feOffset />
-                <feGaussianBlur stdDeviation={8} />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.792157 0 0 0 0 0.156863 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="outside-outline" x={0} y="175.999" width={628} height="456.001" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation={10} />
-                <feColorMatrix type="matrix" values="0 0 0 0 0.913725 0 0 0 0 0.117647 0 0 0 0 0.388235 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="cat-ear" x="202.442" y="114.941" width="223.774" height="183.338" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="12.5" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0.913725 0 0 0 0 0.117647 0 0 0 0 0.388235 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="corn-checkers" x="246.499" y="310.499" width="134.388" height="162.494" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="7.5" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0.891667 0 0 0 0 0.697553 0 0 0 0 0.47184 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="corn" x="200.629" y="260.629" width="226.7" height="309.752" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="7.5" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0.891667 0 0 0 0 0.697553 0 0 0 0 0.47184 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="whiskers" x="194.35" y="229.429" width="237.485" height="49.1481" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation={5} />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.921569 0 0 0 0 0.231373 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="name-s" x="47.0275" y="141.386" width="65.9018" height="65.5425" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="5.74693" />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 0.6 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="name-a1" x="79.788" y="108.578" width="68.4005" height="66.4581" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="5.74693" />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 0.6 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="name-c" x="110.589" y="67.9829" width="65.3954" height="66.1047" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="5.74693" />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 0.6 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="name-h" x="148.623" y="36.5959" width="72.5346" height="75.7793" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="5.74693" />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 0.6 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="name-i1" x="202.086" y="25.1034" width="40.3434" height="63.8848" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="5.74693" />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 0.6 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="name-k" x="229.986" y="12.1032" width="61.4489" height="70.2195" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="5.74693" />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 0.6 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="name-o" x="275.36" y="8.2899" width="61.5269" height="66.2528" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="5.74693" />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 0.6 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="name-t" x="359.666" y="15.1239" width="57.4404" height="68.2701" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="5.74693" />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 0.6 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="name-a2" x="386.201" y="33.9108" width="60.0408" height="69.9607" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="5.74693" />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 0.6 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="name-j" x="431.53" y="57.2035" width="57.1743" height="57.0201" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="5.74693" />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 0.6 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="name-i2" x="459.964" y="74.004" width="52.0848" height="57.4316" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="5.74693" />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 0.6 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="name-m" x="477.832" y="93.6983" width="79.7694" height="79.5472" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="5.74693" />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 0.6 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <filter id="name-a3" x="511.796" y="154.409" width="69.7659" height="62.6027" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="5.74693" />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 0.6 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-        </defs>
+        <SvgDefs />
     </svg>
 );
 
